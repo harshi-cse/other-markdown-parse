@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 test: MarkdownParse.class MarkdownParseTest.class
 	java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
 
@@ -7,13 +6,3 @@ MarkdownParse.class: MarkdownParse.java
 
 MarkdownParseTest.class: MarkdownParseTest.java
 	javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java
-=======
-MarkdownParse.class: MarkdownParse.java
-	javac MarkdownParse.java
-
-MarkdownParseTest.class: MarkdownParse.class MarkdownParseTest.java
-	javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java
-
-test: MarkdownParseTest.class
-	java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
->>>>>>> fa5c8aacb950e4a5297b99e21a71898ac8296f76
